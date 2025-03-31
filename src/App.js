@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React, { use, useState } from 'react';
+import Windowz from './RoomWindow';
+import Table from './Tables';
+import Footer from './Footer';
+import Contents from './ScreenContent';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+    return (
+            <div className="App">
+            <Windowz />
+
+            <Contents />
+
+            <Table />
+            <Footer />
+            </div>
+        );
 }
 
 export default App;
